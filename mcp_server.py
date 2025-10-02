@@ -312,7 +312,7 @@ def main() -> None:
     server = create_server()
     port = int(os.getenv("PORT", 8000))
     logger.info("Starting MCP server on port %s", port)
-    server.run(transport="sse", host="0.0.0.0", port=port)
+    server.run(transport="http", host="127.0.0.1", port=3006)
 
 
 if __name__ == "__main__":
