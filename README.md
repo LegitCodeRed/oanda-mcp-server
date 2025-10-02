@@ -2,6 +2,8 @@
 
 A REST API server for Oanda trading operations, deployed on Railway and compatible with Model Context Protocol (MCP).
 
+In addition to the REST interface, the project now includes a dedicated MCP server that exposes trading operations as tools that can be used by MCP-compatible clients such as ChatGPT.
+
 ## Features
 
 - Account information retrieval
@@ -23,6 +25,11 @@ A REST API server for Oanda trading operations, deployed on Railway and compatib
 - `POST /order/limit` - Place limit order
 - `DELETE /order/{order_id}` - Cancel order
 - `POST /position/close/{instrument}` - Close position
+
+## MCP Server
+
+- `python mcp_server.py` - Starts the MCP server with SSE transport on port `8000` (configurable via `PORT`).
+- Tools available include health checks, account summaries, position and order listings, price lookups, market/limit order placement, order cancellation, and position closing.
 
 ## Environment Variables
 
