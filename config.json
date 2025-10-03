@@ -2,6 +2,9 @@
   "mcpServers": {
     "oanda": {
       "url": "http://127.0.0.1:3006/mcp"
+    },
+    "polygon": {
+      "url": "http://127.0.0.1:8000/sse"
     }
   }
 }

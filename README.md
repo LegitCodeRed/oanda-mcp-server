@@ -37,3 +37,8 @@ In addition to the REST interface, the project now includes a dedicated MCP serv
 - `OANDA_ACCOUNT_ID` - Your Oanda account ID
 - `OANDA_ENVIRONMENT` - 'practice' or 'live'
 - `PORT` - Server port (set automatically by Railway)
+
+
+
+
+npx @srbhptl39/mcp-superassistant-proxy@latest --config ./mcpconfig.json
